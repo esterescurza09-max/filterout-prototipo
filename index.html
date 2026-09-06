@@ -679,12 +679,12 @@ function renderOnboard(){
     mid.innerHTML =
       '<div class="oblogo">'+logoMark(58)+'<span class="obword"><b>Filter</b><i>Out</i></span>'+
       '<span class="obtag">Connect. Watch. Talk. · Video only</span></div>'+
-      '<h2>Acá nadie<br>puede <em>mentir</em></h2>'+
-      '<p>Empezás en video. El teclado se desbloquea recién cuando los dos dieron la cara.</p>';
+      '<h2>Match<br>de <em>verdad</em></h2>'+
+      '<p>Video real, personas reales. Sin sorpresas el día de la cita.</p>';
     var rules = el('div','rulecard');
-    [[I.cam(17),'<b>Tu perfil es un video</b> grabado desde la cámara, no una foto elegida.'],
-     [I.lock(17),'<b>Sin teclado al principio.</b> Se responde en video hasta el segundo.'],
-     [I.clock(17),'<b>Todo caduca.</b> Las notas de video se borran a las 24 h.']]
+    [[I.cam(17),'<b>Tu perfil es un video</b> grabado en el momento, no una foto elegida.'],
+     [I.lock(17),'<b>El teclado se gana.</b> A los dos videos se abre el chat escrito.'],
+     [I.clock(17),'<b>Siempre del día.</b> Las notas de video se borran a las 24 h.']]
     .forEach(function(r){
       var it = el('div','ruleitem');
       it.appendChild(el('div','ri', r[0]));
